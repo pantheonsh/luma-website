@@ -1,0 +1,28 @@
+.guild-info {
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: center;
+    max-width: 150px;
+    margin: 15px;
+}
+.guild-info > img {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+}
+.guild-info > .info {
+    display: flex;
+    flex-direction: column;
+    margin-top: -5px;
+    margin-left: 10px;
+    text-overflow: ellipsis;
+}
+.guild-info > .info > .id {
+    font-size: 12px;
+}
+
+@media (max-width: 640px) {
+    .guild-info {
+        max-width: none;
+    }
+}

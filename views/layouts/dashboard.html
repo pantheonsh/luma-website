@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Title</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="/css/dashboard.css" />
+        <link rel="stylesheet" href="/css/uikit.min.css" />
+        <script src="/js/uikit.min.js"></script>
+        <script src="/js/uikit-icons.min.js"></script>
+    </head>
+    <body>
+        <nav class="uk-navbar-container" uk-navbar>
+            <div class="uk-navbar-left">
+                <a href="" class="uk-navbar-item uk-logo">Luma</a>
+                <ul class="uk-navbar-nav">
+                    <li><a href="#">Início</a></li>
+                    <li class="uk-active"><a href="#">Dashboard</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <div id="offcanvas-nav-primary" uk-offcanvas="overlay: true; mode: push">
+            <div class="uk-offcanvas-bar uk-flex uk-flex-column">
+
+                <ul class="uk-nav uk-nav-primary uk-nav-center uk-margin-auto-vertical">
+                    <li class="uk-nav-header">Configurações gerais</li>
+                    <li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: hashtag"></span> Prefixo</a></li>
+                    <li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: grid"></span> Comandos</a></li>
+                </ul>
+
+            </div>
+        </div>
+
+        <div class="uk-container uk-margin-top">
+            <div>
+                <button class="uk-button uk-button-default" type="button" uk-toggle="target: #offcanvas-nav-primary">
+                    <span uk-icon="icon: menu"></span> Menu
+                </button>
+                <button class="uk-button uk-button-default" type="button" uk-toggle="target: #offcanvas-nav-primary">
+                    <span uk-icon="icon: location"></span> Mudar guild
+                </button>
+                <div class="guild-info">
+                    <img src="https://via.placeholder.com/40">
+                    <div class="info">
+                        <span class="name">Server da Luma</span>
+                        <span class="id">32142317327834847</span>
+                    </div>
+                </div>
+            </div>
+            {{{ body }}}
+        </div>
+    </body>
+</html>
